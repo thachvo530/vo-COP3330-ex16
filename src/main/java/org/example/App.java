@@ -12,11 +12,12 @@ public class App
 {
     public static void main( String[] args ) {
 
-        System.out.print("What is your age? ");
-        Scanner age = new Scanner(System.in);
-        int age1 = age.nextInt();
+        Scanner scan = new Scanner(System.in);
 
-        String drivingcheck = (age1 >= 16) ? "You are old enough to legally drive." : "You are not old enough to legally drive.";
+        System.out.print("What is your age? ");
+        int age = scan.nextInt();
+
+        String drivingcheck = (age >= 16) ? "You are old enough to legally drive." : "You are not old enough to legally drive.";
 
         System.out.print(""+drivingcheck+"");
     }
